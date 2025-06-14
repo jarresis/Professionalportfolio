@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snoopy Fortune Cookie</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #fffbea;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #663399;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #ffd966;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #ffcc00;
+    }
+    #fortune {
+      margin-top: 30px;
+      font-size: 22px;
+      color: #444;
+    }
+    #image {
+      margin-top: 20px;
+    }
+    #image img {
+      width: 250px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Snoopy Fortune Cookie 🥠</h1>
+  <p>Click the button and Snoopy will reveal your fortune!</p>
+  <button onclick="generateFortune()">Get My Fortune</button>
+
+  <div id="fortune"></div>
+  <div id="image"></div>
+
+  <script>
+    const fortunes = [
+      {
+        text: "Today is a good day for a nap under the sun. – Snoopy",
+        img: "<iframe src="https://giphy.com/embed/aeu60CPZd8zw4" width="480" height="360" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/tired-sleeping-peanuts-aeu60CPZd8zw4">via GIPHY</a></p>"
+      },
+      {
+        text: "You are braver than you believe and cooler than Joe Cool. – Snoopy",
+        img: "https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif"
+      },
+      {
+        text: "Be the Flying Ace in your own story. – Snoopy",
+        img: "https://media.giphy.com/media/l0MYOUI5XfRkS3v7K/giphy.gif"
+      },
+      {
+        text: "Keep looking up… that’s the secret of life. – Snoopy",
+        img: "https://media.giphy.com/media/xUOxeZ7A5pYMEKvf2w/giphy.gif"
+      },
+      {
+        text: "Sometimes all you need is a nap and a cookie. – Snoopy",
+        img: "https://media.giphy.com/media/1xVhmDX3zU9Ik/giphy.gif"
+      }
+    ];
+
+    function generateFortune() {
+      const randomIndex = Math.floor(Math.random() * fortunes.length);
+      const fortune = fortunes[randomIndex];
+
+      document.getElementById("fortune").textContent = fortune.text;
+      document.getElementById("image").innerHTML = `<img src="${fortune.img}" alt="Snoopy Image">`;
+    }
+  </script>
+</body>
+</html>
+
