@@ -16,6 +16,13 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+        #map,
+        iframe[src*="maps"],
+        .leaflet-container {
+        display: none !important;
+    }
+  </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -110,7 +117,7 @@
                 </div>
                 <div class="row gx-0">
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                        <a class="portfolio-item">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2"> Podcast Internship</div>
@@ -121,7 +128,7 @@
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                        <a class="portfolio-item">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Gantt Chart</div>
@@ -132,7 +139,7 @@
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                        <a class="portfolio-item">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Intro to Information Systems </div>
@@ -143,7 +150,7 @@
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                        <a class="portfolio-item">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">website</div>
@@ -171,29 +178,26 @@
                 <a class="btn btn-xl btn-light" href="mailto:jackelinearresis@gmail.com">Email Me</a>
             </div>
         </section>
-        <!-- Map-->
-        <div class="map" id="contact">
-            <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-            <br />
-            <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
-        </div>
+        
+        <!-- Tableau Preview Section -->
+        <section class="content-section bg-light text-center" id="tableau-preview">
+            <div class="container px-4 px-lg-5">
+                <h2 class="mb-4">Interactive Tableau Dashboard</h2>
+                    <p class="mb-5">
+                    Dive into data! This dashboard explores job market trends, remote work growth, and hiring patterns through visual insights I analyzed and shared using Tableau Public.
+                    </p>
+                <a class="btn btn-dark btn-xl" href="tableu.html">View Tableau Dashboard</a>
+            </div>
+        </section>
+        
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container px-4 px-lg-5">
-                <ul class="list-inline mb-5">
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
-                    </li>
-                </ul>
-                <p class="text-muted small mb-0">Copyright &copy; Your Website 2023</p>
+                <ul class="list-inline mb-5"></ul>
+                <p class="text-muted small mb-0">Copyright &copy; Jackeline Arresis 2025</p>
             </div>
         </footer>
+        
         <!-- Scroll to Top Button-->
         <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
         <!-- Bootstrap core JS-->
